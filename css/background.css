@@ -1,0 +1,75 @@
+#web_bg {
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: -o-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: -ms-linear-gradient(
+    0deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(247, 149, 51, 0.1) 0,
+    rgba(243, 112, 85, 0.1) 15%,
+    rgba(239, 78, 123, 0.1) 30%,
+    rgba(161, 102, 171, 0.1) 44%,
+    rgba(80, 115, 184, 0.1) 58%,
+    rgba(16, 152, 173, 0.1) 72%,
+    rgba(7, 179, 155, 0.1) 86%,
+    rgba(109, 186, 130, 0.1) 100%
+  );
+}/* 文章页背景 */
+.layout_post>#post {
+    /* 以下代表白色透明度为0.3 */
+    background: rgba(255,255,255,.3);
+}
+/* 所有背景（包括首页卡片、文章页、页面页等） */
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+    /* 以下代表白色透明度为0.3 */
+    background: rgba(255,255,255,.3);
+}
+#footer #footer-wrap{color:#999;padding:1rem}
+#footer{background-color:rgba(0,0,0,.02)}
+#footer::before{background-color:rgba(0,0,0,0)}
+#footer-wrap a{color:#999}body{cursor:url(https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/img/default.cur),default}a,img{cursor:url(https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/img/pointer.cur),default}#article-container figure.highlight{box-shadow:rgba(0,0,0,.4) 0 0 5px 0;border-radius:10px}#article-container figure.highlight,#article-container pre{color:#a9a9a9;background:rgba(0,0,0,0)}#article-container figure.highlight .highlight-tools{color:#a9a9a9;background:rgba(0,0,0,0)}#article-container figure.highlight .gutter pre{color:#999;background:rgba(0,0,0,0)}::-webkit-scrollbar{width:5px;height:4px}figure.highlight table::-webkit-scrollbar-thumb{background:#49b1f560}::-webkit-scrollbar-thumb{background:var(--btn-bg);border-radius:20px}#sidebar{background-image:linear-gradient(-225deg,#e3fdf5 0,#f9eef7 100%)}#sidebar .sidebar-toc .toc-link.active {border-radius:6px;padding:6px;}.post-reward .reward-button {border-radius:20px;}
+
+/*夜间修复*/
+[data-theme='dark']
+/*侧边文章目录*/
+#sidebar {background:#111111;}
