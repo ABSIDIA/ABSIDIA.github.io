@@ -136,11 +136,11 @@ function bot_ui_ini() {
 			}).then(function() {
 				botui.message.add({
 					delay: 1600,
-					content: "那么，相遇就是缘分，加个好友吧 ^_^"
+					content: "那么，相遇就是缘分，加个QQ好友吧 ^_^"
 				}).then(function() {
 				botui.message.add({
 					delay: 1000,
-					content: "![](https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/img/About-WX.png)"
+					content: "![](https://cdn.jsdelivr.net/gh/GlumeBL/Uimg@latest/2020/09/11/29a019085e394f5a1c4315cae2153cff.png)"
 				})
 			})
 		})
