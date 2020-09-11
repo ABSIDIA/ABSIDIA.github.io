@@ -69,7 +69,93 @@
 #footer::before{background-color:rgba(0,0,0,0)}
 #footer-wrap a{color:#999}body{cursor:url(https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/img/default.cur),default}a,img{cursor:url(https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/img/pointer.cur),default}#article-container figure.highlight{box-shadow:rgba(0,0,0,.4) 0 0 5px 0;border-radius:10px}#article-container figure.highlight,#article-container pre{color:#a9a9a9;background:rgba(0,0,0,0)}#article-container figure.highlight .highlight-tools{color:#a9a9a9;background:rgba(0,0,0,0)}#article-container figure.highlight .gutter pre{color:#999;background:rgba(0,0,0,0)}::-webkit-scrollbar{width:5px;height:4px}figure.highlight table::-webkit-scrollbar-thumb{background:#49b1f560}::-webkit-scrollbar-thumb{background:var(--btn-bg);border-radius:20px}#sidebar{background-image:linear-gradient(-225deg,#e3fdf5 0,#f9eef7 100%)}#sidebar .sidebar-toc .toc-link.active {border-radius:6px;padding:6px;}.post-reward .reward-button {border-radius:20px;}
 
-/*夜间修复*/
-[data-theme='dark']
 /*侧边文章目录*/
 #sidebar {background:#111111;}
+/*侧栏不自动展开*/
+ul.menus_item_child {
+    display: none;
+}
+/*夜间修复*/
+[data-theme=dark]
+#sidebar {
+	background:#111111;
+}
+[data-theme=dark]
+#article-container .tabs {
+    background: 0 0;
+}
+[data-theme=dark]
+#footer #footer-wrap {
+    background: #111111;
+}
+#article-container .tabs {background: #fff0;}
+/*归档*/
+.article-sort-item-info {
+    background: #49b1f515;
+    border-radius: 10px;
+    padding: 15px!important;
+    margin-left: -2%;
+}
+/*友链*/
+.flink#article-container .flink-list>.flink-list-item {
+    border: 1px solid #8888885e;
+}
+#article-container .tabs {
+    background: #fff;
+}
+/*代码块*/
+#article-container figure.highlight .highlight-tools .code-lang {
+    font-size: .7rem;
+}
+#article-container figure.highlight .highlight-tools .code-lang {
+    left: 50%!important;
+    transform: translateX(-50%);
+}
+/*评论背景*/
+#vcomment textarea:focus {
+    background-position-y:150px;
+    transition: all 0.25s ease-in-out 0s;
+}
+#vcomment textarea {
+    background: url(https://cdn.jsdelivr.net/gh/GlumeBL/Uimg@latest/2020/09/10/41bd35202a4e97deb63f5da7ed397513.png) 100% 100% no-repeat;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+}
+
+/*侧边评论圆角*/
+#aside_content .aside-list>.aside-list-item .thumbnail>img {
+    border-radius:70px;
+    width:70%;
+    height:70%;
+}
+#aside_content .aside-list>.aside-list-item .content {
+    padding-left:0px;
+}
+#aside_content .aside-list>.aside-list-item .thumbnail>img:hover {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+}
+
+/*掩耳盗铃线*/
+.CA,.CA a,a .CA,.CA a.new {
+     filter: blur(5px);
+}
+body:not(.CA_toggle_on) .CA:hover,body:not(.CA_toggle_on) .CA:active,body:not(.CA_toggle_on) .CA.off {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    filter: blur(0px);
+}
+
