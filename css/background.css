@@ -54,23 +54,106 @@
     rgba(7, 179, 155, 0.1) 86%,
     rgba(109, 186, 130, 0.1) 100%
   );
-}/* 文章页背景 */
-.layout_post>#post {
-    /* 以下代表白色透明度为0.3 */
-    background: rgba(255,255,255,.3);
 }
-/* 所有背景（包括首页卡片、文章页、页面页等） */
-#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
-    /* 以下代表白色透明度为0.3 */
-    background: rgba(255,255,255,.3);
+/*侧边*/
+#aside_content .card-widget {
+	background: rgba(255,255,255,.05)
 }
-#footer #footer-wrap{color:#999;padding:1rem}
-#footer{background-color:rgba(0,0,0,.02)}
-#footer::before{background-color:rgba(0,0,0,0)}
-#footer-wrap a{color:#999}body{cursor:url(https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/3.1.0/img/default.cur),default}a,img{cursor:url(https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/3.1.0/img/pointer.cur),default}#article-container figure.highlight{box-shadow:rgba(0,0,0,.4) 0 0 5px 0;border-radius:10px}#article-container figure.highlight,#article-container pre{color:#a9a9a9;background:rgba(0,0,0,0)}#article-container figure.highlight .highlight-tools{color:#a9a9a9;background:rgba(0,0,0,0)}#article-container figure.highlight .gutter pre{color:#999;background:rgba(0,0,0,0)}::-webkit-scrollbar{width:5px;height:4px}figure.highlight table::-webkit-scrollbar-thumb{background:#49b1f560}::-webkit-scrollbar-thumb{background:var(--btn-bg);border-radius:20px}#sidebar{background-image:linear-gradient(-225deg,#e3fdf5 0,#f9eef7 100%)}#sidebar .sidebar-toc .toc-link.active {border-radius:6px;padding:6px;}.post-reward .reward-button {border-radius:20px;}
 
-/*侧边文章目录*/
-#sidebar {background:#111111;}
+.layout_page>div:first-child:not(.recent-posts),.layout_post>#post {
+	background: rgba(255,255,255,.05)
+}
+/*文章头图*/
+#page-header {
+	background-color: rgba(0,0,0,0)
+}
+
+#page-header.post-bg::before {
+	background-color: rgba(0,0,0,.2)
+}
+
+#recent-posts>.recent-post-item {
+	background: rgba(255,255,255,.05)
+}
+/*页脚*/
+#footer #footer-wrap {
+	color: #999;
+	padding: 1rem
+}
+
+#footer {
+	background-color: rgba(0,0,0,.02)
+}
+
+#footer::before {
+	background-color: rgba(0,0,0,0)
+}
+
+#footer-wrap a {
+	color: #999
+}
+/*鼠标*/
+body {
+	cursor: url(https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/3.1.0/img/default.cur),default
+}
+
+a,img {
+	cursor: url(https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/3.1.0/img/pointer.cur),default
+}
+/*代码块*/
+#article-container figure.highlight {
+	box-shadow: rgba(0,0,0,.4) 0 0 5px 0;
+	border-radius: 5px
+}
+
+#article-container figure.highlight,#article-container pre {
+	color: #a9a9a9;
+	background: rgba(0,0,0,0)
+}
+
+#article-container figure.highlight .highlight-tools {
+	color: #a9a9a9;
+	background: rgba(0,0,0,0)
+}
+
+#article-container figure.highlight .gutter pre {
+	color: #999;
+	background: rgba(0,0,0,0)
+}
+[data-theme=dark]
+#article-container figure.highlight table::-webkit-scrollbar-thumb {
+	background: #4c4c4c!important;
+}
+[data-theme=dark] #article-container .highlight:not(.js-file-line-container){
+        box-shadow: rgb(173 173 173 / 40%) 0 0 5px 0;
+}
+/*滚动*/
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-image: linear-gradient(-225deg,#feb7ffba 0,#73fff1a6 100%)!important;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-image: linear-gradient(-225deg,#fb00ffba 0,#00ffe5a6 100%)!important;
+}
+/*文章目录*/
+#sidebar {
+	background-image: linear-gradient(-225deg,#e3fdf5 0,#f9eef7 100%)
+}
+
+#sidebar .sidebar-toc .toc-link.active {
+	border-radius: 6px;
+	padding: 6px;
+}
+
+.post-reward .reward-button {
+	border-radius: 20px;
+}
+
 /*侧栏不自动展开*/
 ul.menus_item_child {
     display: none;
@@ -88,7 +171,10 @@ ul.menus_item_child {
 #footer #footer-wrap {
     background: #111111;
 }
-#article-container .tabs {background: #fff0;}
+/*tap*/
+#article-container .tabs {
+	background: #fff0;
+}
 /*归档*/
 .article-sort-item-info {
     background: #49b1f515;
@@ -100,6 +186,7 @@ ul.menus_item_child {
 .flink#article-container .flink-list>.flink-list-item {
     border: 1px solid #8888885e;
 }
+/*tap*/
 #article-container .tabs {
     background: #fff;
 }
@@ -116,19 +203,14 @@ ul.menus_item_child {
     background-position-y:150px;
     transition: all 0.25s ease-in-out 0s;
 }
-#vcomment textarea {
-    background: url(https://cdn.jsdelivr.net/gh/GlumeBL/Uimg@latest/2020/09/10/41bd35202a4e97deb63f5da7ed397513.png) 100% 100% no-repeat;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-}
-
 /*侧边评论圆角*/
 #aside_content .aside-list>.aside-list-item .thumbnail>img {
     border-radius:70px;
-    width:70%;
-    height:70%;
+    width:80%;
+    height:80%;
+    margin-top: 6px;
+    border: 1px solid #8888886b;
+    padding: 2px;
 }
 #aside_content .aside-list>.aside-list-item .content {
     padding-left:0px;
@@ -159,3 +241,451 @@ body:not(.CA_toggle_on) .CA:hover,body:not(.CA_toggle_on) .CA:active,body:not(.C
     filter: blur(0px);
 }
 
+/*检查加载*/
+.glume-gd{
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+/*加载停止*/
+.glume-gd-stop{
+    -webkit-animation: none!important;
+    animation: none!important;
+}
+/*取消回复*/
+.v[data-class=v] .vwrap .cancel-reply-btn:hover{
+fill: #41b5407d !important;
+}
+
+/*tap框*/
+#article-container .tabs{
+    background:#fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+#article-container .tabs>.nav-tabs{
+    background:#fff;
+}
+#article-container .tabs>.nav-tabs>.tab button {
+    background: #fff;
+}
+#article-container .tabs>.nav-tabs>.tab:not(.active) button:hover {
+    color: #1e90ff;
+}
+[data-theme=dark]
+#article-container .tabs{
+    background:0 0;
+    box-shadow: 0 2px 6px rgba(255,255,255,.1);
+}
+[data-theme=dark]
+#article-container .tabs>.nav-tabs{
+    background:#000;
+}
+[data-theme=dark]
+#article-container .tabs>.nav-tabs>.tab button {
+    background: #000;
+}
+
+
+
+
+
+
+/*外挂标签tip*/
+.tip {
+    position: relative;
+    color: #fff;
+    background: #20a0ff;
+    background: -webkit-gradient(linear,left top,right top,from(#20a0ff),to(#20b8ff));
+    background: -webkit-linear-gradient(left,#20a0ff,#20b8ff);
+    background: linear-gradient(90deg,#20a0ff,#20b8ff);
+    padding: 6px 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 5px rgba(32,160,255,.5);
+    box-shadow: 0 3px 5px rgba(32,160,255,.5);
+    margin-bottom: 20px
+}
+
+.tip p {
+    margin: 5px 0!important
+}
+
+.tip:before {
+    background: #20a0ff;
+    background: -webkit-gradient(linear,left bottom,left top,from(#0092ff),to(#20b8ff));
+    background: -webkit-linear-gradient(bottom,#0092ff,#20b8ff);
+    background: linear-gradient(0deg,#0092ff,#20b8ff);
+    border-radius: 50%;
+    color: #fff;
+    content: "\f129";
+    font-size: 12px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24.5px;
+    left: -12px;
+    top: -12px;
+    -webkit-box-shadow: 0 0 0 2.5px #fff;
+    box-shadow: 0 0 0 2.5px #fff;
+    font-weight: 600;
+    font-family: "Font Awesome 5 Free";
+    text-align: center
+}
+
+.btn,.getit a {
+    position: relative
+}
+
+.well .tip:before {
+    -webkit-box-shadow: 0 0 0 2.5px #f7f8f9;
+    box-shadow: 0 0 0 2.5px #f7f8f9
+}
+
+.tip ol {
+    margin: 0
+}
+
+/*success*/
+
+.tip.success {
+    background: #61be33;
+    background: -webkit-gradient(linear,left top,right top,from(#61be33),to(#8fce44));
+    background: -webkit-linear-gradient(left,#61be33,#8fce44);
+    background: linear-gradient(90deg,#61be33,#8fce44);
+    text-shadow: 0 -1px #61be33;
+    -webkit-box-shadow: 0 3px 5px rgba(104,195,59,.5);
+    box-shadow: 0 3px 5px rgba(104,195,59,.5)
+}
+
+.tip.success:before {
+    background: -webkit-gradient(linear,left bottom,left top,from(#52bb1d),to(#95d34b));
+    background: -webkit-linear-gradient(bottom,#52bb1d,#95d34b);
+    background: linear-gradient(0deg,#52bb1d,#95d34b);
+    content: "\f00c";
+    text-shadow: 0 -1px #61be33
+}
+
+/*warning*/
+
+.tip.warning {
+    background: #ff953f;
+    background: -webkit-gradient(linear,left top,right top,from(#ff953f),to(#ffb449));
+    background: -webkit-linear-gradient(left,#ff953f,#ffb449);
+    background: linear-gradient(90deg,#ff953f,#ffb449);
+    text-shadow: 0 -1px #ff953f;
+    -webkit-box-shadow: 0 3px 5px rgba(255,154,73,.5);
+    box-shadow: 0 3px 5px rgba(255,154,73,.5)
+}
+
+.tip.warning:before {
+    background: -webkit-gradient(linear,left bottom,left top,from(#ff8f35),to(#ffc149));
+    background: -webkit-linear-gradient(bottom,#ff8f35,#ffc149);
+    background: linear-gradient(0deg,#ff8f35,#ffc149);
+    content: "\f12a";
+    text-shadow: 0 -1px #ff953f
+}
+
+/*error*/
+
+.tip.error {
+    background: #ff4949;
+    background: -webkit-gradient(linear,left top,right top,from(#ff4949),to(#ff7849));
+    background: -webkit-linear-gradient(left,#ff4949,#ff7849);
+    background: linear-gradient(90deg,#ff4949,#ff7849);
+    text-shadow: 0 -1px #ff4949;
+    -webkit-box-shadow: 0 3px 5px rgba(255,73,73,.5);
+    box-shadow: 0 3px 5px rgba(255,73,73,.5)
+}
+
+.tip.error:before {
+    background: -webkit-gradient(linear,left bottom,left top,from(#ff3838),to(#ff7849));
+    background: -webkit-linear-gradient(bottom,#ff3838,#ff7849);
+    background: linear-gradient(0deg,#ff3838,#ff7849);
+    content: "\f00d";
+    text-shadow: 0 -1px #ff4949
+}
+
+/*primary*/
+.tip.primary {
+    background: #6f42c1;
+    background: -webkit-gradient(linear,left top,right top,from(#6f42c1),to(#7449c1));
+    background: -webkit-linear-gradient(left,#6f42c1,#7449c1);
+    background: linear-gradient(90deg,#6f42c1,#7449c1);
+    text-shadow: 0 -1px #6f42c1;
+    -webkit-box-shadow: 0 3px 5px #8442ff80;
+    box-shadow: 0 3px 5px #8442ff80;
+}
+
+.tip.primary:before {
+    background: -webkit-gradient(linear,left bottom,left top,from(#6f42c1),to(#7449c1));
+    background: -webkit-linear-gradient(bottom,#6f42c1,#7449c1);
+    background: linear-gradient(0deg,#6f42c1,#7449c1);
+    content: "\f055";
+    text-shadow: 0 -1px #8442ff80;
+}
+
+/*夜间适配*/
+[data-theme="dark"] .tip {
+    filter: brightness(0.75);
+}
+
+
+
+/*外挂标签--单选-复选*/
+.checkbox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.checkbox input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    transition: all .15s ease-out 0s;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    border-radius: 2px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 8px
+}
+
+.checkbox input[type=checkbox]:after,.checkbox input[type=checkbox]:before {
+    position: absolute;
+    content: "";
+    background: #fff
+}
+
+.checkbox input[type=checkbox]:before {
+    left: 1px;
+    top: 5px;
+    width: 0;
+    height: 2px;
+    transition: all .2s ease-in;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg)
+}
+
+.checkbox input[type=checkbox]:after {
+    right: 7px;
+    bottom: 3px;
+    width: 2px;
+    height: 0;
+    transition: all .2s ease-out;
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transition-delay: .25s
+}
+
+.checkbox input[type=checkbox]:checked:before {
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 2px
+}
+
+.checkbox input[type=checkbox]:checked:after {
+    right: 3px;
+    bottom: 1px;
+    width: 2px;
+    height: 10px
+}
+
+.checkbox.minus input[type=checkbox]:before {
+    transform: rotate(0);
+    left: 1px;
+    top: 5px;
+    width: 0;
+    height: 2px
+}
+
+.checkbox.minus input[type=checkbox]:after {
+    transform: rotate(0);
+    left: 1px;
+    top: 5px;
+    width: 0;
+    height: 2px
+}
+
+.checkbox.minus input[type=checkbox]:checked:before {
+    left: 1px;
+    top: 5px;
+    width: 10px;
+    height: 2px
+}
+
+.checkbox.minus input[type=checkbox]:checked:after {
+    left: 1px;
+    top: 5px;
+    width: 10px;
+    height: 2px
+}
+
+.checkbox.plus input[type=checkbox]:before {
+    transform: rotate(0);
+    left: 1px;
+    top: 5px;
+    width: 0;
+    height: 2px
+}
+
+.checkbox.plus input[type=checkbox]:after {
+    transform: rotate(0);
+    left: 5px;
+    top: 1px;
+    width: 2px;
+    height: 0
+}
+
+.checkbox.plus input[type=checkbox]:checked:before {
+    left: 1px;
+    top: 5px;
+    width: 10px;
+    height: 2px
+}
+
+.checkbox.plus input[type=checkbox]:checked:after {
+    left: 5px;
+    top: 1px;
+    width: 2px;
+    height: 10px
+}
+
+.checkbox.times input[type=checkbox]:before {
+    transform: rotate(45deg);
+    left: 3px;
+    top: 1px;
+    width: 0;
+    height: 2px
+}
+
+.checkbox.times input[type=checkbox]:after {
+    transform: rotate(135deg);
+    right: 3px;
+    top: 1px;
+    width: 0;
+    height: 2px
+}
+
+.checkbox.times input[type=checkbox]:checked:before {
+    left: 1px;
+    top: 5px;
+    width: 10px;
+    height: 2px
+}
+
+.checkbox.times input[type=checkbox]:checked:after {
+    right: 1px;
+    top: 5px;
+    width: 10px;
+    height: 2px
+}
+
+.checkbox input[type=radio] {
+    border-radius: 50%
+}
+
+.checkbox input[type=radio]:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 2px;
+    transform: scale(0);
+    transition: all .25s ease-out
+}
+
+.checkbox input[type=radio]:checked:before {
+    transform: scale(1)
+}
+
+.checkbox input {
+    border: 2px solid #2196f3
+}
+
+.checkbox input[type=checkbox]:checked {
+    background: #2196f3
+}
+
+.checkbox input[type=radio]:checked:before {
+    background: #2196f3
+}
+
+.checkbox.red input {
+    border-color: #fe5f58
+}
+
+.checkbox.red input[type=checkbox]:checked {
+    background: #fe5f58
+}
+
+.checkbox.red input[type=radio]:checked:before {
+    background: #fe5f58
+}
+
+.checkbox.green input {
+    border-color: #3dc550
+}
+
+.checkbox.green input[type=checkbox]:checked {
+    background: #3dc550
+}
+
+.checkbox.green input[type=radio]:checked:before {
+    background: #3dc550
+}
+
+.checkbox.yellow input {
+    border-color: #ffbd2b
+}
+
+.checkbox.yellow input[type=checkbox]:checked {
+    background: #ffbd2b
+}
+
+.checkbox.yellow input[type=radio]:checked:before {
+    background: #ffbd2b
+}
+
+.checkbox.cyan input {
+    border-color: #1bcdfc
+}
+
+.checkbox.cyan input[type=checkbox]:checked {
+    background: #1bcdfc
+}
+
+.checkbox.cyan input[type=radio]:checked:before {
+    background: #1bcdfc
+}
+
+.checkbox.blue input {
+    border-color: #2196f3
+}
+
+.checkbox.blue input[type=checkbox]:checked {
+    background: #2196f3
+}
+
+.checkbox.blue input[type=radio]:checked:before {
+    background: #2196f3
+}
+
+.checkbox p {
+    display: inline-block;
+    margin-top: 2px!important;
+    margin-bottom: 0!important
+}
