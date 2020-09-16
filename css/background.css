@@ -55,6 +55,18 @@
     rgba(109, 186, 130, 0.1) 100%
   );
 }
+/*评论背景*/
+#vcomment textarea:focus {
+    background-position-y:150px;
+    transition: all 0.25s ease-in-out 0s;
+}
+#vcomment textarea {
+    background: url(https://cdn.jsdelivr.net/gh/absidia/vskvm@master/img/moe.gif) 100% 100% no-repeat;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+}
 /*侧边*/
 #aside_content .card-widget {
 	background: rgba(255,255,255,.05)
