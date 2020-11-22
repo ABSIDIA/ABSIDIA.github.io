@@ -48,7 +48,7 @@ function bot_ui_ini() {
 		end = function() {
 			botui.message.add({
 				delay: 100,
-				content: "![](https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/img/About-Kill.gif)"
+				content: "![](https://imageproxy.chaoxing.com/spZuqSi04NS3i6dweQ7IUsbYBoHrECY2vByhYZjtT1KI/http://p.ananas.chaoxing.com/star3/origin/39104b62b7e461c3bc81b8a5831b735a.png)"
 			})
 		},
 		secondpart = function() {
@@ -140,7 +140,7 @@ function bot_ui_ini() {
 				}).then(function() {
 				botui.message.add({
 					delay: 1000,
-					content: "![](https://cdn.jsdelivr.net/gh/GlumeBL/Uimg@latest/2020/09/11/29a019085e394f5a1c4315cae2153cff.png)"
+					content: "![](https://cdn.jsdelivr.net/gh/absidia/images@master/tc/1.0/tencent-qq.png)"
 				})
 			})
 		})
