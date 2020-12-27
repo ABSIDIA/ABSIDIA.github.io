@@ -9,8 +9,30 @@
     <atom:link href="https://lolicon.team/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>在你心里-直到永远</description>
-    <pubDate>Thu, 17 Dec 2020 12:15:35 GMT</pubDate>
+    <pubDate>Sun, 27 Dec 2020 10:26:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Live2D看板娘</title>
+      <link>https://lolicon.team/posts/Live2D25.html</link>
+      <guid>https://lolicon.team/posts/Live2D25.html</guid>
+      <pubDate>Sun, 27 Dec 2020 01:11:52 GMT</pubDate>
+      
+        
+        
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info no-icon flat"><p>该页面讲解的是我制作Live2D看板娘时遇到的坑<br>本文章包含解决问题的方法</p></div><h2 id="Live2D-光标跟踪"><a href="#Live2D-光标跟踪" class="headerlink" title="Live2D-光标跟踪"></a>Live2D-光标跟踪</h2><p>左上角建模 - 转换模型ID<br><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/sj8kxStFd1clkQ8TJym7BCr3ENtatmBc5iXgswzk-MQg/http://p.ananas.chaoxing.com/star3/origin/bd3df2e5810f82fb5478e924f3679b10.png"><br>选择格式为2.1 - 选项取消勾 - OK<br><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/snzfY3aKYRGjASgUCeVeFGjXPwVYnvkasdiOJodv_EV8/http://p.ananas.chaoxing.com/star3/origin/e0657e79462992c9e8d14f6d587a995c.png"></p><h2 id="Live2D-显示优先错乱"><a href="#Live2D-显示优先错乱" class="headerlink" title="Live2D-显示优先错乱"></a>Live2D-显示优先错乱</h2><p>首先你要检查的时部件的分层<br>图层和PS一致，一定要分清楚！<br>然后就是绘图顺序<br>级别越高，优先级越大<br><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/sGJ6CZQmSfC8moPbEqeGcFIl47llq1ftOYN-Wg8h1PLo/http://p.ananas.chaoxing.com/star3/origin/0bbde80e60ebf126d31f0323936eb318.png"></p><div class="note info no-icon flat"><p>为了完善这篇文章，帮助其他人🤝<br><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DzAqOdEvu0SIM0RWEZYaMoOsCaZIGh1BvehflcyMlRpUMzNSTThOTFNIRTA0VzU4SVdJQjFBTVJITy4u">请您填写这个问卷</a></p></div>]]></content:encoded>
+      
+      
+      
+      
+      <comments>https://lolicon.team/posts/Live2D25.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Live2D看板娘开始制作！</title>
