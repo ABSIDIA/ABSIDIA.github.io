@@ -9,13 +9,13 @@
     <atom:link href="https://lolicon.team/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>在你心里-直到永远</description>
-    <pubDate>Sun, 27 Dec 2020 11:27:10 GMT</pubDate>
+    <pubDate>Mon, 28 Dec 2020 09:56:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>Live2D看板娘</title>
-      <link>https://lolicon.team/posts/Live2D25.html</link>
-      <guid>https://lolicon.team/posts/Live2D25.html</guid>
+      <title>Live2D看板娘来咯~</title>
+      <link>https://lolicon.team/posts/10005.html</link>
+      <guid>https://lolicon.team/posts/10005.html</guid>
       <pubDate>Sun, 27 Dec 2020 01:11:52 GMT</pubDate>
       
         
@@ -25,12 +25,12 @@
       
       
       
-      <content:encoded><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info no-icon flat"><p>该页面讲解的是我制作Live2D看板娘时遇到的坑<br>本文章包含解决问题的方法</p></div><h2 id="Live2D-光标跟踪"><a href="#Live2D-光标跟踪" class="headerlink" title="Live2D-光标跟踪"></a>Live2D-光标跟踪</h2><p>左上角建模 - 转换模型ID<br><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/sj8kxStFd1clkQ8TJym7BCr3ENtatmBc5iXgswzk-MQg/http://p.ananas.chaoxing.com/star3/origin/bd3df2e5810f82fb5478e924f3679b10.png"><br>选择格式为2.1 - 选项取消勾 - OK<br><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/snzfY3aKYRGjASgUCeVeFGjXPwVYnvkasdiOJodv_EV8/http://p.ananas.chaoxing.com/star3/origin/e0657e79462992c9e8d14f6d587a995c.png"></p><h2 id="Live2D-显示优先错乱"><a href="#Live2D-显示优先错乱" class="headerlink" title="Live2D-显示优先错乱"></a>Live2D-显示优先错乱</h2><p>首先你要检查的时部件的分层<br>图层和PS一致，一定要分清楚！<br>然后就是绘图顺序<br>级别越高，优先级越大<br><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/sGJ6CZQmSfC8moPbEqeGcFIl47llq1ftOYN-Wg8h1PLo/http://p.ananas.chaoxing.com/star3/origin/0bbde80e60ebf126d31f0323936eb318.png"></p><div class="note info no-icon flat"><p>为了完善这篇文章，帮助其他人🤝<br><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DzAqOdEvu0SIM0RWEZYaMoOsCaZIGh1BvehflcyMlRpUMzNSTThOTFNIRTA0VzU4SVdJQjFBTVJITy4u">请您填写这个问卷</a></p></div>]]></content:encoded>
+      <content:encoded><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="萌萌哒的看板娘来啦"><a href="#萌萌哒的看板娘来啦" class="headerlink" title="萌萌哒的看板娘来啦"></a>萌萌哒的看板娘来啦</h2><p><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/sqBHX8pwOgMmUks3auJW-8itQhzQbSdawFepvSiiaIhc/http://p.ananas.chaoxing.com/star3/origin/dc7627caa6d1697e36975c4176ca9292.png"></p><p>嘛，讲真这个看板娘挺费我心思的，应该做了有一个多星期，是不是感觉看的时间挺少的，才一个星期而已。</p><p>开始打算自做头部转动的后来打算把桌宠也给做了，于是就顺便把其他的地方也做了QAQ。</p><p>桌宠还需调整，动作啥的都没好，也不一定有时间做了，因为家里网络布局还没搞好。</p><p>不过自己做出来一个独一无二，属于自己的看板娘（自豪感和满足感肯定有的呀 233）</p><div class="note info simple"><p>Docs 文档：<a href="/doc-api">API服务</a></p></div><h2 id="制作过程"><a href="#制作过程" class="headerlink" title="制作过程"></a>制作过程</h2><div class="note blue icon flat"><i class="note-icon fas fa-bullhorn"></i><p>不用想啦，肯定缩减，不可能一步步都写出来 :)</p></div><h3 id="构图过程"><a href="#构图过程" class="headerlink" title="构图过程"></a>构图过程</h3><p>嗯，当然是构图啦，万事都是构图开始</p><p>如果是网络上的素材那就得抠图了！</p><p><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/s84BzCLpW1cisEA-Z8-WMEXIhkT2PzL26wC6bmdbhTDM/http://p.ananas.chaoxing.com/star3/origin/4e200d5edd787fbf540802ec511fb5b3.png"></p><p>做好的样子是这样的！看起来挺萌的，但是我没想到另一件事。</p><p><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/sQMTJnN4mMcIOYEdJsRGPjRYeZD0eAg-TQn4CLpCfYio/http://p.ananas.chaoxing.com/star3/origin/ac95c59502631520f6f422093c0b02fb.png"></p><p>在这之前，我没看过任何有关LIVE2D的教程，因为我属于那种不看说明书就直接莽的人。</p><p>然后我就傻傻的找LIVE2D，直到导入软件的那一刻我才意识到不对劲。</p><p>这波，这波血亏，分层没分对，艹！</p><p>把图层分好后咱就开始了不归路，开始只打算随便做一下就算了（头和眼睛），但后来，既然做都做了，顺便把桌宠也给做了岂不美哉，然后我就按照桌宠的规格做了。</p><p><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/sAaFiBsr7J-Tr4M77kPejT8Owh8JW_i3XRtBczvvbibc/http://p.ananas.chaoxing.com/star3/origin/4d9e7b4f6367e07227593794b441f687.png"></p><h2 id="搭建API"><a href="#搭建API" class="headerlink" title="搭建API"></a>搭建API</h2><table><thead><tr><th align="center">人员</th><th align="center">博客</th><th align="center">内容</th></tr></thead><tbody><tr><td align="center">fghrsh</td><td align="center"><a href="https://www.fghrsh.net/">www.fghrsh.net</a></td><td align="center">后端 API 提供</td></tr><tr><td align="center">stevenjoezhang</td><td align="center"><a href="https://zhangshuqiao.org/">stevenjoezhang</a></td><td align="center">前端 API 提供</td></tr></tbody></table><p>嘛，我就是个做模型的啦</p><p><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/sCkjjI_rrUYLlagHVgPvy33ftft7RU8Qj6sWkrl3IL-Y/http://p.ananas.chaoxing.com/star3/origin/7946215cdd0c101fd6023e16bc5cf712.png"></p><p><img src= "/img/loading.gif" data-lazy-src="https://imageproxy.chaoxing.com/siIwjELhjTaZJNGOK99ufcGyyFiAPX3y_sE1wxemrjk4/http://p.ananas.chaoxing.com/star3/origin/61c4e2cdb3aa09dbe0954805a61feb85.png"></p><p>搭建完成了！</p><p>哎太累了做完这个看板娘</p><div class="note info no-icon flat"><p>这是一个LIVE2D的帮助文章🤝<br><a href="/live2d-help">Live2D-Help</a>可以帮做你做LIVE2D哦！</p></div>]]></content:encoded>
       
       
       
       
-      <comments>https://lolicon.team/posts/Live2D25.html#disqus_thread</comments>
+      <comments>https://lolicon.team/posts/10005.html#disqus_thread</comments>
       
     </item>
     

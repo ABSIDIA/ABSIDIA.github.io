@@ -1,10 +1,12 @@
 #web_bg {
-    background: -webkit-linear-gradient(0deg, rgba(247, 149, 51, .1) 0, rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1) 100%);
-    background: -moz-linear-gradient(0deg, rgba(247, 149, 51, .1) 0, rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1) 100%);
-    background: -o-linear-gradient(0deg, rgba(247, 149, 51, .1) 0, rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1) 100%);
-    background: -ms-linear-gradient(0deg, rgba(247, 149, 51, .1) 0, rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1) 100%);
-    background: linear-gradient(90deg, rgba(247, 149, 51, .1) 0, rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1) 100%)
+  /* 背景图像的地址（url括号里）  */
+  background: url(https://images.2w2.top/static/img/bg2.jpg);
+  /* 背景图像不重复 */
+  background-repeat: no-repeat;
+  /* 背景图像大小 */
+  background-size: cover;
 }
+/* 去除顶部banner图使用的是JS - background.js */
 
 #vcomment textarea {
     background: url(https://cdn.jsdelivr.net/gh/absidia/vskvm@master/img/moe.gif) 100% 100%/contain no-repeat;
@@ -16,36 +18,82 @@
 #aside_content .card-widget,
 .layout_page>div:first-child:not(.recent-posts),
 .layout_post>#post {
-    background: rgba(255, 255, 255, .05)
+    background: rgba(255, 255, 255, .8)
 }
 
 #page-header {
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, .8)
 }
 
 #page-header.post-bg::before {
-    background-color: rgba(0, 0, 0, .2)
+    background-color: rgba(0, 0, 0, .8)
 }
 
 #recent-posts>.recent-post-item {
-    background: rgba(255, 255, 255, .05)
+    background: rgba(255, 255, 255, .8)
 }
 
-#footer #footer-wrap {
-    color: #999;
-    padding: 1rem
-}
 
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0 50%;
+    }
+}
+ 
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0 50%;
+    }
+}
+ 
+@keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0 50%;
+    }
+}
+/* 页脚footer 半透明 */
 #footer {
-    background-color: rgba(0, 0, 0, .0)
+    background: rgba(255,255,255,.15);
+    color: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: saturate(100%) blur(5px)
 }
 
 #footer::before {
-    background-color: rgba(0, 0, 0, 0)
+    background: rgba(255,255,255,.15)
 }
 
-#footer-wrap a {
-    color: #999
+#footer #footer-wrap {
+    color: var(--font-color);
+}
+
+#footer #footer-wrap a {
+    color: var(--font-color);
 }
 
 body {
@@ -66,14 +114,14 @@ img {
 #article-container figure.highlight .highlight-tools,
 #article-container pre {
     color: #a9a9a9;
-    background: rgba(0, 0, 0, 0)
+    background: rgba(0, 0, 0, 0);
 }
 
 #article-container figure.highlight .gutter pre {
     color: #999;
-    background: rgba(0, 0, 0, 0)
+    background: rgba(0, 0, 0, 0);
 }
-
+/* 滚动条 */
 [data-theme=dark] #article-container figure.highlight table::-webkit-scrollbar-thumb {
     background: #4c4c4c !important
 }
